@@ -25,5 +25,26 @@ namespace ProblemsProject
                 
             }
         }
+
+
+        public void PrintLeapYearOne()
+        {
+            int currentYear = 2017;
+            int count = 1;
+            Console.WriteLine("Next 20 Leap Years : ");
+
+
+            for (int i = currentYear; ; i++)
+            {
+                if ((i % 4 == 0 && i % 100 != 0) || i % 400 == 0)
+                {
+                    Console.WriteLine(i + " Leap Year ");
+                    count++;
+                    if (count > 20)
+                        break;
+                }
+
+            }
+        }
     }
 }

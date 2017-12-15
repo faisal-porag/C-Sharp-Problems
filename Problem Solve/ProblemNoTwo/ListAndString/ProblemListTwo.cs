@@ -10,16 +10,27 @@ namespace ListAndString
     {
         public void listReverse() {
             var numList = new List<int>() { 1, 2, 3, 4, 7, 8, 10, 12, 13, 14, 16 };
+            Console.Write("[ ");
+            foreach (var list in numList)
+            {
+                Console.Write(list + " ");
+            }
+            Console.Write("]");
+            Console.WriteLine("\n");
 
             numList.Reverse();
 
-            foreach(var revList in numList)
+            Console.WriteLine("The reverses list ");
+            Console.Write("[ ");
+            foreach (var revList in numList)
             {
-                Console.Write(revList + "\t");
+                Console.Write(revList + " ");
             }
-            Console.WriteLine();
+            Console.Write("]");
+            Console.WriteLine("\n");
 
 
         }
+        
     }
 }

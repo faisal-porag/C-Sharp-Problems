@@ -13,6 +13,13 @@ namespace ListAndString
             var numberList = new List<int>() { 5, 8, 2, 12, 4, 9, 23, 1, 32, 05, 7 };
             int large = numberList[0];
             int lengthCount = numberList.Count;
+            Console.Write("[ ");
+            foreach (var list in numberList)
+            {
+                Console.Write(list + " ");
+            }
+            Console.Write("]");
+            Console.WriteLine("\n");
             if (lengthCount > 0)
             {
                 for (int i = 0; i < lengthCount; i++)
@@ -22,6 +29,27 @@ namespace ListAndString
                         int tmp = large;
                         large = numberList[i];
                         numberList[i] = large;
+                    }
+                }
+
+            }
+            return large;
+        }
+
+        public int PrintLargestElement()
+        {
+            int[] arr = { 5, 8, 2, 12, 4, 9, 23, 1, 32, 05, 7 };
+            int large = arr[0];
+            int lengthCount = arr.Length;
+            if (lengthCount > 0)
+            {
+                for (int i = 0; i < lengthCount; i++)
+                {
+                    if (large < arr[i])
+                    {
+                        int tmp = large;
+                        large = arr[i];
+                        arr[i] = large;
                     }
                 }
 

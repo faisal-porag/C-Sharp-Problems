@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ListAndString</RootNamespace>
     <AssemblyName>ListAndString</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,11 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProblemListEight.cs" />
+    <Compile Include="ProblemListFive.cs" />
+    <Compile Include="ProblemListForteen.cs" />
+    <Compile Include="ProblemListFour.cs" />
+    <Compile Include="ProblemListNine.cs" />
+    <Compile Include="ProblemListNineteen.cs" />
     <Compile Include="ProblemListOne.cs" />
     <Compile Include="ProblemListSeven.cs" />
+    <Compile Include="ProblemListSix.cs" />
+    <Compile Include="ProblemListTen.cs" />
+    <Compile Include="ProblemListThirteen.cs" />
     <Compile Include="ProblemListThree.cs" />
     <Compile Include="ProblemListTwo.cs" />
-    <Compile Include="ProblemOne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
