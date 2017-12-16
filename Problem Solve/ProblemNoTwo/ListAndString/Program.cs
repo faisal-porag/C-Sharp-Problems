@@ -56,6 +56,14 @@ namespace ListAndString
             ProblemListTen listTen = new ProblemListTen();
             //listTen.combineList1();
 
+            ProblemListEleven listEleven = new ProblemListEleven();
+            //listEleven.MargeSortedList();
+
+            ProblemListTwelve listTwelve = new ProblemListTwelve();
+            //listTwelve.SwapListElement();
+            //listTwelve.RotateWiithArray(2);
+            listTwelve.RotateWithList(2);
+
             ProblemListThirteen listThirteen = new ProblemListThirteen();
             //listThirteen.GetFibonacci();
 
@@ -72,7 +80,7 @@ namespace ListAndString
 
 
             ProblemListNineteen listNineteen = new ProblemListNineteen();
-            listNineteen.Print1();
+            //listNineteen.Print1();
 
         }
     }

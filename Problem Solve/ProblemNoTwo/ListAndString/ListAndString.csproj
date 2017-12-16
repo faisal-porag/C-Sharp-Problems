@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ProblemListEight.cs" />
+    <Compile Include="ProblemListEleven.cs" />
     <Compile Include="ProblemListFive.cs" />
     <Compile Include="ProblemListForteen.cs" />
     <Compile Include="ProblemListFour.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="ProblemListTen.cs" />
     <Compile Include="ProblemListThirteen.cs" />
     <Compile Include="ProblemListThree.cs" />
+    <Compile Include="ProblemListTwelve.cs" />
     <Compile Include="ProblemListTwo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
