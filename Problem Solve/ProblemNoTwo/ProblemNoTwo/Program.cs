@@ -35,7 +35,7 @@ namespace ProblemsProject
             //eight.getAllPrimeNumber();
 
             ProblemNine nine = new ProblemNine();
-            nine.guessSecretNumber1();
+            nine.guessSecretNumber();
 
             ProblemTen ten = new ProblemTen();
             //ten.PrintLeapYearOne();
