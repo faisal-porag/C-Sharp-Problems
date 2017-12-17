@@ -9,52 +9,61 @@ namespace ListAndString
     class ProblemListTen
     {
 
-        public  List<char> combineList(List<char> a1, List<char> a2)
+        public void DoCombineList()
         {
+            List<string> list1 = new List<string> { "a", "b", "c" };
+            List<string> list2 = new List<string> { "1", "2", "3" };
+            getList1(list1);
+            getList2(list2);
+            
+            var resList = list1.Concat(list2).ToList();
+            // a b c 1 2 3
+            // a 1 b 2 c 3
+            //List<string> storeResult = new List<string>();
+            string[] storeResult = new string[resList.Count];
+            int m = 0, n = 0;
 
-            int len = a1.Count + a2.Count;
-            List<char> result = new List<char>(len);
-            int j = 0, k = 0;
-
-            for (int i = 0; i < len; i++)
+            for (int i = 0; i < resList.Count; i++)
             {
-                if (i % 2 == 0)
-                    result[i] = a1[j++];
+                if(i % 2 == 0)
+                {
+                    storeResult[i] = list1[m++];
+                }
                 else
-                    result[i] = a2[k++];
+                {
+                    storeResult[i] = list2[n++];
+                }
             }
 
-            return result;
+            foreach (var item in storeResult)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
         }
 
-        public void combineList1()
+
+
+        public void getList1(List<string> list1)
         {
-            List<char> a1 = new List<char> { 'a', 'b', 'c' };
-            List<char> a2 = new List<char> { '1', '2', '3' };
-            int len = a1.Count + a2.Count;
-            List<char> result = new List<char>(len);
-            //Console.WriteLine(len);
-
-            int j = 0, k = 0;
-
-            for (int i = 0; i < len; i++)
+            foreach (var item in list1)
             {
-                if (i % 2 == 0)
-                {
-                    result[i] = a1[j++];
-                }
-                    
-                else{
-                    result[i] = a2[k++];
-                }
-                    
+                Console.Write(item + " ");
             }
-            foreach (var item in result)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine();
+        }
 
+        public void getList2(List<string> list2)
+        {
+            foreach (var item in list2)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+        }
+
+        
         }
         
     }
-}
+
