@@ -30,24 +30,12 @@ namespace ListAndString
             //listSix.getStatus();
             //var flag = listSix.getStatus1("BBA");
             //Console.WriteLine(flag);
-
-
-            //-------------------
-            int[] arr = new int[] { 2, 4, 6, 8, 10 }; //Result 30
-            int counter = arr.Length;
-            List<int> list = new List<int> { 2, 4, 6, 8, 10 }; //Result 30
-            int counter1 = list.Count;
-            int sum = 0;
-
+            
             ProblemListSeven listSeven = new ProblemListSeven();
-
-            //Console.WriteLine(listSeven.forLoopMethod1(counter1, list) + " From For loop Method");
-            //Console.WriteLine(listSeven.whileLoopMethod1(counter1, list) + " From While loop Method");
-            //Console.WriteLine(listSeven.recursiveMethod(sum,counter1, list.ToArray()) + " From Recursive Method");
-
+            //listSeven.printResult();
 
             ProblemListEight listEight = new ProblemListEight();
-
+            listEight.perfectSquare();
 
             ProblemListNine listNine = new ProblemListNine();
             //listNine.ConcatenationOfList();
@@ -68,26 +56,11 @@ namespace ListAndString
             //listThirteen.GetFibonacci();
 
             ProblemListForteen listForteen = new ProblemListForteen();
-            //var list2 = listForteen.NumberToList();
-            //list2.Reverse();
-            //Console.Write("[");
-            //foreach (var item in list2)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //Console.WriteLine("]");
-
-
+            //listForteen.printResult();
 
             ProblemListNineteen listNineteen = new ProblemListNineteen();
             //listNineteen.Print1();
 
-
-            // some algorithms 
-            SelectionSort sSort = new SelectionSort();
-            //sSort.sortArray();
-            sSort.sortList();
-
-        }
+         }
     }
 }
