@@ -54,7 +54,7 @@ namespace ListAndString
 
             
             ProblemListTen listTen = new ProblemListTen();
-            listTen.DoCombineList();
+            //listTen.DoCombineList();
 
             ProblemListEleven listEleven = new ProblemListEleven();
             //listEleven.MargeSortedList();
@@ -81,6 +81,12 @@ namespace ListAndString
 
             ProblemListNineteen listNineteen = new ProblemListNineteen();
             //listNineteen.Print1();
+
+
+            // some algorithms 
+            SelectionSort sSort = new SelectionSort();
+            //sSort.sortArray();
+            sSort.sortList();
 
         }
     }
