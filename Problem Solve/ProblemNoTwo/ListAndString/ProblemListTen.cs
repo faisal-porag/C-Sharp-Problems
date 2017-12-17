@@ -19,19 +19,21 @@ namespace ListAndString
             var resList = list1.Concat(list2).ToList();
             // a b c 1 2 3
             // a 1 b 2 c 3
-            //List<string> storeResult = new List<string>();
-            string[] storeResult = new string[resList.Count];
+            List<string> storeResult = new List<string>();
+            //string[] storeResult = new string[resList.Count];
             int m = 0, n = 0;
 
             for (int i = 0; i < resList.Count; i++)
             {
                 if(i % 2 == 0)
                 {
-                    storeResult[i] = list1[m++];
+                    //storeResult[i] = list1[m++];
+                    storeResult.Add(list1[m++]);
                 }
                 else
                 {
-                    storeResult[i] = list2[n++];
+                    //storeResult[i] = list2[n++];
+                    storeResult.Add(list2[n++]);
                 }
             }
 
