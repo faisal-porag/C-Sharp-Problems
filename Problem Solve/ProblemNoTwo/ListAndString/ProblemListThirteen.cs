@@ -20,6 +20,22 @@ namespace ListAndString
                 Console.WriteLine(a + " ");
             }
         }
+        
+        //using recursive method 
+        public int FibonacciCal(int n)
+        {
+            var res = n < 2 ? n : FibonacciCal(n - 1) + FibonacciCal(n - 2);
+            return res;
+        }
+        
+        public void MethodForFibonacci()
+        {
+            for (var i = 0; i < 20; i++)
+            {
+                Console.WriteLine(FibonacciCal(i));
+            }
+            
+        }
 
     }
 }
